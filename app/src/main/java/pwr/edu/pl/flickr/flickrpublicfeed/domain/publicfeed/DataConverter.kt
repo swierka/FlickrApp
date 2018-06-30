@@ -24,3 +24,8 @@ fun PublicFeedItemJsonResponse.getPublishedDate(): Date? {
     }
     return null
 }
+
+fun PublicFeedItemJsonResponse.getTags(): List<String> {
+    val tagsSeparator= " "
+    return tags.split(tagsSeparator.toRegex()).dropLastWhile { it.isEmpty() }
+}

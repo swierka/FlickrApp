@@ -19,7 +19,7 @@ class PublicFeedActivity : AppCompatActivity() {
         val binding = DataBindingUtil.setContentView<ActivityPublicFeedBinding>(this, R.layout.activity_public_feed)
         binding.listViewModel = publicFeedViewModel
 
-        val dataSource  = PublicFeedData()
+/*        val dataSource  = PublicFeedData()
         dataSource.loadDataForTest()
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe({
@@ -27,7 +27,7 @@ class PublicFeedActivity : AppCompatActivity() {
                         Log.d("ELEMENTS", "Size of data ${it.size}")
                     }
                 }, {
-                })
+                })*/
 
     }
 }

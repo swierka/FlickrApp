@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
             name="itemViewModel"
             type="pwr.edu.pl.flickr.flickrpublicfeed.ui.publicfeed.viewmodel.PublicFeedItemViewModel" />
@@ -18,7 +17,8 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/size_photo_on_list_height"
             android:contentDescription="@string/cd_photo_from_feed"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
+            app:publishedImagesBind="@{itemViewModel.publicFeedItem.imageUrl}"
             app:layout_constraintBottom_toTopOf="@+id/photo_title_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +33,9 @@
             android:lines="1"
             android:text="@{itemViewModel.publicFeedItem.title}"
             android:textSize="@dimen/text_photo_title_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/photo_tag_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -56,6 +59,7 @@
             android:layout_margin="@dimen/margin_small"
             android:lines="1"
             android:textSize="@dimen/text_small_font_size"
+            app:publishedTagsBind="@{itemViewModel.publicFeedItem.tags}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/photo_date_iv"
             app:layout_constraintHorizontal_bias="0.5"

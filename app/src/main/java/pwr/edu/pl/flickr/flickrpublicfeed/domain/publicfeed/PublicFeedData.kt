@@ -20,7 +20,7 @@ class PublicFeedData {
                             publicFeedItemJsonResponse.title,
                             publicFeedItemJsonResponse.media.m,
                             publicFeedItemJsonResponse.getPublishedDate(),
-                            emptyList())//TODO publicFeedItemJsonResponse.getTags())
+                            publicFeedItemJsonResponse.getTags())
                 }
                 .toList().subscribeOn(Schedulers.io())
     }

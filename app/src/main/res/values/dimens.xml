@@ -6,8 +6,8 @@
     <dimen name="margin_std">12dp</dimen>
 
     //fonts
-    <dimen name="text_photo_title_font_size">18sp</dimen>
-    <dimen name="text_small_font_size">12sp</dimen>
+    <dimen name="text_photo_title_font_size">20sp</dimen>
+    <dimen name="text_small_font_size">14sp</dimen>
 
     //size
     <dimen name="size_photo_on_list_height">200dp</dimen>

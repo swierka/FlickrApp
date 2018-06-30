@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flickr Public Feed</string>
+    <string name="app_name">Check out latest Flickr photos!</string>
 
     <string name="cd_tag_icon">tag icon</string>
     <string name="cd_photo_from_feed">Photo from feed.</string>
